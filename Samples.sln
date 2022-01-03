@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "src\ConsoleApp\ConsoleApp.csproj", "{6F29F4A2-1DB4-4912-8382-E6593FAD0302}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "src\1. POO\ConsoleApp\ConsoleApp.csproj", "{6F29F4A2-1DB4-4912-8382-E6593FAD0302}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "src\Models\Models.csproj", "{74671408-D771-4AA5-88E9-4A357A7DF41C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "src\1. POO\Models\Models.csproj", "{74671408-D771-4AA5-88E9-4A357A7DF41C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - POO", "1 - POO", "{68E8D371-E4AE-4544-8270-15D1E1505D4C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6F29F4A2-1DB4-4912-8382-E6593FAD0302} = {68E8D371-E4AE-4544-8270-15D1E1505D4C}
+		{74671408-D771-4AA5-88E9-4A357A7DF41C} = {68E8D371-E4AE-4544-8270-15D1E1505D4C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7BB9A993-DEC9-434F-B537-287AE57B4536}
