@@ -9,64 +9,17 @@
 //------------------------------------------------------------------------------
 
 namespace MyCompany.Codex.WinApp.Services {
-    using System.Runtime.Serialization;
-    using System;
     
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Creature", Namespace="http://schemas.datacontract.org/2004/07/MyCompany.Codex.WebApp.Dtos")]
-    [System.SerializableAttribute()]
-    public partial class Creature : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid IdField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="Services.ICodexService")]
     public interface ICodexService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICodexService/GetCreatures", ReplyAction="http://tempuri.org/ICodexService/GetCreaturesResponse")]
-        MyCompany.Codex.WinApp.Services.Creature[] GetCreatures();
+        MyCompany.Codex.Dtos.CreatureDto[] GetCreatures();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICodexService/GetCreatures", ReplyAction="http://tempuri.org/ICodexService/GetCreaturesResponse")]
-        System.Threading.Tasks.Task<MyCompany.Codex.WinApp.Services.Creature[]> GetCreaturesAsync();
+        System.Threading.Tasks.Task<MyCompany.Codex.Dtos.CreatureDto[]> GetCreaturesAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -96,11 +49,11 @@ namespace MyCompany.Codex.WinApp.Services {
                 base(binding, remoteAddress) {
         }
         
-        public MyCompany.Codex.WinApp.Services.Creature[] GetCreatures() {
+        public MyCompany.Codex.Dtos.CreatureDto[] GetCreatures() {
             return base.Channel.GetCreatures();
         }
         
-        public System.Threading.Tasks.Task<MyCompany.Codex.WinApp.Services.Creature[]> GetCreaturesAsync() {
+        public System.Threading.Tasks.Task<MyCompany.Codex.Dtos.CreatureDto[]> GetCreaturesAsync() {
             return base.Channel.GetCreaturesAsync();
         }
     }

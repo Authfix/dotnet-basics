@@ -1,4 +1,4 @@
-﻿using MyCompany.Codex.WebApp.Dtos;
+﻿using MyCompany.Codex.Dtos;
 using MyCompany.Codex.WebApp.Managers;
 using System.Collections.Generic;
 
@@ -20,7 +20,7 @@ namespace MyCompany.Codex.WebApp
         /// Gets codex creatures
         /// </summary>
         /// <returns></returns>
-        public IEnumerable<Creature> GetCreatures()
+        public IEnumerable<CreatureDto> GetCreatures()
         {
             return _codexManager.GetCreatures();
         }

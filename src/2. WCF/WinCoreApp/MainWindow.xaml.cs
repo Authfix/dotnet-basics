@@ -1,8 +1,7 @@
-﻿using MyCompany.Codex.WinApp.Services;
-using System.Linq;
+﻿using Services;
 using System.Windows;
 
-namespace MyCompany.Codex.WinApp
+namespace MyCompany.Codex.WinCoreApp
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -17,9 +16,9 @@ namespace MyCompany.Codex.WinApp
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var client = new CodexServiceClient();
-
             var creatures = client.GetCreatures();
-            CreatureList.ItemsSource = creatures.ToList();
+
+
         }
     }
 }
