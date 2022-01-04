@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="413087db-2d76-4915-9f6b-641cd53ca4db" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:62334/CodexService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CodexService.xsd" MetadataType="Schema" ID="c53554b8-6d5f-4bdf-bff1-01de256f1579" SourceId="1" SourceUrl="http://localhost:62334/CodexService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CodexService.wsdl" MetadataType="Wsdl" ID="e7d80cfb-b63f-496f-b84f-48b17e2a1c81" SourceId="1" SourceUrl="http://localhost:62334/CodexService.svc?wsdl" />
+    <MetadataFile FileName="CodexService.disco" MetadataType="Disco" ID="e5c1df64-b030-4a71-9a68-414792e81526" SourceId="1" SourceUrl="http://localhost:62334/CodexService.svc?disco" />
+    <MetadataFile FileName="CodexService1.xsd" MetadataType="Schema" ID="5a2125a7-4c45-4d54-8efb-4046d1a4269d" SourceId="1" SourceUrl="http://localhost:62334/CodexService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CodexService2.xsd" MetadataType="Schema" ID="889b883a-0dc6-4feb-8ccf-e6b95801d7b7" SourceId="1" SourceUrl="http://localhost:62334/CodexService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
