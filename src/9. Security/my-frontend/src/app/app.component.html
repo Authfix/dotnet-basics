@@ -1,0 +1,8 @@
+<button (click)="login()" >Se connecter</button>
+<button (click)="logout()">Se déconnecter</button>
+
+<div *ngFor="let item of weather">
+  {{ item.summary }}
+</div>
+
+<router-outlet></router-outlet>
