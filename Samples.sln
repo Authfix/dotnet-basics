@@ -70,7 +70,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Async", "6 - Async", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinApp", "src\6. Async\WinApp\WinApp.csproj", "{9A0DF74D-4CBE-44EF-884C-62265B264407}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "src\6. Async\ConsoleApp\ConsoleApp.csproj", "{B788B805-DF8D-4B56-8B2E-1D4FDF75C770}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "src\6. Async\ConsoleApp\ConsoleApp.csproj", "{B788B805-DF8D-4B56-8B2E-1D4FDF75C770}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9 - Security", "9 - Security", "{9FC7D4F7-C963-4F79-9E8F-8C8AAAE98237}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBackend", "src\9. Security\my-backend\my-backend\MyBackend.csproj", "{CDFE5642-E543-49D4-8DFF-5280BB5DA653}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encrypteur", "src\9. Security\Encrypteur\Encrypteur.csproj", "{DE7BC81F-FDCA-4D89-80A5-D96EFDB25CEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -150,6 +156,14 @@ Global
 		{B788B805-DF8D-4B56-8B2E-1D4FDF75C770}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B788B805-DF8D-4B56-8B2E-1D4FDF75C770}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B788B805-DF8D-4B56-8B2E-1D4FDF75C770}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDFE5642-E543-49D4-8DFF-5280BB5DA653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDFE5642-E543-49D4-8DFF-5280BB5DA653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDFE5642-E543-49D4-8DFF-5280BB5DA653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDFE5642-E543-49D4-8DFF-5280BB5DA653}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE7BC81F-FDCA-4D89-80A5-D96EFDB25CEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE7BC81F-FDCA-4D89-80A5-D96EFDB25CEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE7BC81F-FDCA-4D89-80A5-D96EFDB25CEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE7BC81F-FDCA-4D89-80A5-D96EFDB25CEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -182,6 +196,8 @@ Global
 		{2ED8D7D1-993A-45F4-B9FD-70740809A96E} = {1807AC57-8B02-4033-B40D-EF5F271C5C4A}
 		{9A0DF74D-4CBE-44EF-884C-62265B264407} = {DF30EDA4-4841-4293-B69F-3356935C6BB7}
 		{B788B805-DF8D-4B56-8B2E-1D4FDF75C770} = {DF30EDA4-4841-4293-B69F-3356935C6BB7}
+		{CDFE5642-E543-49D4-8DFF-5280BB5DA653} = {9FC7D4F7-C963-4F79-9E8F-8C8AAAE98237}
+		{DE7BC81F-FDCA-4D89-80A5-D96EFDB25CEA} = {9FC7D4F7-C963-4F79-9E8F-8C8AAAE98237}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7BB9A993-DEC9-434F-B537-287AE57B4536}

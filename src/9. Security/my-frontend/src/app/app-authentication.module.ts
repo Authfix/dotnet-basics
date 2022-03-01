@@ -8,7 +8,7 @@ import { AuthModule } from '@auth0/auth0-angular';
       clientId: 'xxxxxxxxxxxxxxxxxxxxx',
 
       audience: 'http://localhost:5216',
-      scope: 'read:current_user',
+      scope: '',
 
       httpInterceptor: {
         allowedList: [
@@ -16,7 +16,7 @@ import { AuthModule } from '@auth0/auth0-angular';
             uri: 'http://localhost:5216/*',
             tokenOptions: {
               audience: 'http://localhost:5216',
-              scope: 'read:current_user'
+              scope: ''
             }
           }
         ]

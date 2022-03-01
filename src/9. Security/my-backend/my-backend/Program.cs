@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.IdentityModel.Tokens;
+using my_backend.Authorizations;
 using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,7 +16,18 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddCors(a => a.AddPolicy("AngularApplication", b => b.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod()));
 
+// Warning : singleton !!
+builder.Services.AddSingleton<IAuthorizationHandler, ReadWriteAuthorizationHandler>();
+
 builder.Services
+    .AddAuthorization(o =>
+    {
+        o.AddPolicy("ReaderOnly", policyBuilder => 
+        {
+            policyBuilder.AddRequirements(new ReadWriteAuthorizationRequirement());
+            policyBuilder.RequireAssertion(authorizationContext => authorizationContext.User.HasClaim("permissions", "Weathers:Read"));
+        });
+    })
     .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
